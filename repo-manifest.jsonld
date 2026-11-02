@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/zopefoundation/BTrees/commit/8b46803be1ef9dfab0a9568847d9d69d1b55a05f",
       "git:hexsha": "8b46803be1ef9dfab0a9568847d9d69d1b55a05f",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     },
     {
       "@id": "https://repolex.ai/r/zopefoundation/BTrees/commit/c9be47be1739ae43e3ba9fb3b656aa960e8517a5",
