@@ -1,0 +1,27 @@
+[2026-11-22T01:39:10Z] === ENRICH ITERATION 1 START | repo=zopefoundation/BTrees sha=50a33baa ===
+[2026-11-22T01:39:10Z] [iter=1] PHASE START: enrich repo=zopefoundation/BTrees sha=50a33baa runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/50a33baa-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/50a33baaebd010c92cbf2e999a9d0a063e4c772b.nq.gz
+[2026-11-22T01:39:19Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T01:39:26Z] [iter=1] AST store loaded triples=806801 load_secs=7 mem_mb=794 MB
+[2026-11-22T01:39:26Z] [iter=1] Step 2: Finding LSP targets mem_mb=794 MB
+[2026-11-22T01:39:28Z] [iter=1] LSP targets found call_sites=7228 imports=374 extends=143 implements=0 secs=2
+[2026-11-22T01:39:29Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=794 MB
+[2026-11-22T01:39:33Z] [iter=1] Position index built positions=53454 nodes_with_types=68141 secs=4 mem_mb=794 MB
+[2026-11-22T01:39:33Z] [iter=1] Step 3: Starting LSP resolution mem_mb=794 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T01:39:33Z] [iter=1] Resolving target type target_type=call_site count=7228
+[2026-11-22T01:42:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=2 resolved=1130 errors=0 current=src/BTrees/tests/testConflict.py
+[2026-11-22T01:46:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=4 resolved=2920 errors=0 current=src/BTrees/_base.py
+[2026-11-22T01:47:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.3 files_done=5 resolved=3394 errors=0 current=src/BTrees/tests/test_dynamic_btrees.py
+[2026-11-22T01:48:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=10 resolved=3842 errors=0 current=src/BTrees/tests/test_fsBTree.py
+[2026-11-22T01:48:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=16 resolved=4029 errors=0 current=src/BTrees/_datatypes.py
+[2026-11-22T01:49:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=26 resolved=4200 errors=0 current=src/BTrees/SetOpTemplate.c
+[2026-11-22T01:50:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.8 files_done=28 resolved=4368 errors=0 current=src/BTrees/sorters.c
+[2026-11-22T01:50:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=32 resolved=4581 errors=0 current=src/BTrees/BTreeModuleTemplate.c
+[2026-11-22T01:51:12Z] [iter=1] Target type resolved target_type=call_site resolved=4638 errors=0 secs=699 mem_mb=794 MB
+[2026-11-22T01:51:12Z] [iter=1] Resolving target type target_type=import_statement count=374
+[2026-11-22T01:51:18Z] [iter=1] Target type resolved target_type=import_statement resolved=285 errors=0 secs=6 mem_mb=794 MB
+[2026-11-22T01:51:18Z] [iter=1] Resolving target type target_type=extends_clause count=143
+[2026-11-22T01:51:18Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=12.1 files_done=0 resolved=0 errors=0 current=src/BTrees/tests/test_btreesubclass.py
+[2026-11-22T01:51:21Z] [iter=1] Target type resolved target_type=extends_clause resolved=132 errors=0 secs=3 mem_mb=794 MB
+[2026-11-22T02:01:07Z] [iter=1] Step 5: Writing final enrichment file triples=66008
+[2026-11-22T02:01:08Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/50a33baaebd010c92cbf2e999a9d0a063e4c772b.nq.gz size_kb=1271
+[2026-11-22T02:01:08Z] [iter=1] PHASE END: enrich elapsed_s=1318 elapsed_min=22.0 total_triples=66008
